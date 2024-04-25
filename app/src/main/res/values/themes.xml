@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme_SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+
+    <!--Pantalla de Carga xml -->
+    <!--Se llama para mantener la pantalla de carga por uno ssegundos -->
+    <style name="SplashTheme" parent="Theme_SplashScreen">
+        <item name="android:windowBackground">@drawable/startapp</item>
+    </style>
+
+
+
+    </resources>

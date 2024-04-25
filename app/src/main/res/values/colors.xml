@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!-- Aqui se agregan los colores utilizados de la app-->
+    <color name="primaryone">#82BEC6</color>
+    <color name="primarytwo">#193256</color>
+    <color name="primarythree">#9AD0C2</color>
+    <color name="primaryfor">#EAF1D5</color>
+
+    <color name="primaryfive">#7C7B7B</color>
+    7C7B7B
+
+</resources>

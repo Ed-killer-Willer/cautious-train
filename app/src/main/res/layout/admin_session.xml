@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".admin.Session_Admin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <!--Layout_Top -->
+
+
+        <!-- conjunto de texto (Perfiles) -->
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/top_rectangule_blef"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:onClick="admin_back_user_all"
+
+
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:background="@drawable/back_withe_icon"
+                android:textSize="@dimen/_9sdp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/layout_top"
+            android:paddingTop="@dimen/_60sdp"
+            android:layout_centerHorizontal="true"
+
+
+            android:id="@+id/textAboveRelativeLayout"
+
+            android:text="Bienvenido al"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter"
+            android:textSize="29sp"/>
+
+        <TextView
+            android:id="@+id/textAboveRelativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/textAboveRelativeLayout"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Inicio de Sesión"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_90sdp"
+
+            android:id="@+id/profile_user"
+            android:layout_below="@id/textAboveRelativeLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+
+            android:background="@drawable/pack"
+            android:foregroundGravity="center"
+            />
+
+        <!-- Botón Usuario -->
+
+        <EditText
+            android:id="@+id/txt_user"
+            style="@style/Widget.AppCompat.Button"
+            android:background="@drawable/btn_naby_blue"
+
+
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_33sdp"
+
+            android:layout_below="@+id/profile_user"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="73dp"
+            android:drawableEnd="@drawable/admin_icon"
+            android:fontFamily="@font/inter"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_9sdp"
+            android:inputType="textEmailAddress|textPersonName"
+            android:textColor="@color/white"
+
+            android:autofillHints="emailAddress|emailPersonName"
+            android:hint="Ed-Killer"
+            android:textColorHint="#80FFFFFF"
+            android:autoSizeTextType="uniform"
+
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="17sp" />
+
+        <!-- Botón Usuario -->
+
+        <EditText
+            android:id="@+id/btn_user2"
+            style="@style/Widget.AppCompat.Button"
+
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_33sdp"
+
+            android:layout_below="@+id/txt_user"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="73dp"
+            android:background="@drawable/btn_naby_blue"
+            android:drawableEnd="@drawable/key_icon"
+            android:fontFamily="@font/inter"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_9sdp"
+            android:hint="Contraseña"
+            android:textColorHint="#80FFFFFF"
+            android:autofillHints="password"
+
+            android:inputType="textPassword"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="admin_go_recovery_password"
+
+            android:layout_below="@id/btn_user2"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginStart="@dimen/_62sdp"
+            android:id="@+id/forgotpassword"
+            android:textStyle="bold"
+            android:text="¿Olvidó su contraseña?"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="11sp"/>
+
+        <GridLayout
+            android:id="@+id/container_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_below="@id/forgotpassword"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:background="@drawable/btnblack1"
+                android:id="@+id/btn_user12"
+                android:layout_width="170dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:text="Ingresar"
+                android:onClick="layout_admin_main"
+
+                android:textAllCaps="false"
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"/>
+
+        </GridLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:id="@+id/layout_bottom"
+
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="53dp"
+            android:background="@drawable/bottom_rectangule_tright"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/copyrightTextView"
+                style="bottom_background_light"
+
+
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+
+                android:text="© 2024 Derechos Reservados"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:paddingBottom="@dimen/_8sdp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

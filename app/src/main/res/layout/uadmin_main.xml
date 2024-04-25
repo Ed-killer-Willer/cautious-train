@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".admin.Main_Uadmin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--Principal Container-->
+    <RelativeLayout
+        android:id="@+id/LayoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="409dp"
+            android:layout_height="387dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/layout_black_buttom_left"/>
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:onClick="back_main_admin"
+
+
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:background="@drawable/back_withe_icon"
+            android:textSize="@dimen/_9sdp" />
+
+        <RelativeLayout
+            android:layout_width="413dp"
+            android:layout_height="153dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/layout_black_top_left">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/black">
+
+        </RelativeLayout>
+
+        <!--Contenedor central de crear trabajadores-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="301dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="153dp"
+            android:background="@drawable/btn_white"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <!--Create Workers-->
+
+            <GridLayout
+                android:id="@+id/grid_create_workers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_68sdp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2">
+
+                <!-- Primera imagen y texto -->
+                <RelativeLayout
+
+                    android:layout_width="@dimen/_225sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/btn_gray"
+                    android:onClick="go_to_create_uadmin">
+
+                    <GridLayout
+                        android:layout_width="@dimen/_225sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:columnCount="2">
+
+                        <ImageView
+                            android:id="@+id/grid_status1"
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/btn_gray_top_bottom"
+                            android:gravity="center"
+                            android:padding="@dimen/_12sdp"
+
+                            android:src="@drawable/create_white_icon" />
+
+                        <TextView
+                            android:id="@+id/grid_status2"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_row="0"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="center"
+                            android:text="Altas"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13sdp"
+                            tools:ignore="RtlCompat" />
+
+                    </GridLayout>
+
+
+                </RelativeLayout>
+
+                <!-- Segunda imagen y texto -->
+                <RelativeLayout
+                    android:onClick="go_to_rud_uadmin"
+                    android:layout_width="@dimen/_225sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_gray">
+
+                    <GridLayout
+                        android:layout_width="@dimen/_225sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:columnCount="2">
+
+                        <ImageView
+                            android:id="@+id/grid_status3"
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_columnWeight="1"
+                            android:background="@drawable/btn_gray_top_bottom"
+                            android:gravity="center"
+                            android:padding="@dimen/_12sdp"
+
+                            android:src="@drawable/tools_white_icon" />
+
+                        <TextView
+                            android:id="@+id/grid_status4"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_row="0"
+                            android:layout_column="1"
+                            android:layout_columnWeight="1"
+                            android:layout_marginStart="@dimen/_12sdp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="center"
+                            android:text="Bajas y consultas"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13sdp"
+                            tools:ignore="RtlCompat" />
+
+                    </GridLayout>
+
+
+                </RelativeLayout>
+
+
+            </GridLayout>
+
+
+        </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <!--Segunda capapa (Imagen / Container text)-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <ImageView
+
+                android:id="@+id/image_admin_main_user"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_alignParentTop="true"
+
+                android:layout_centerInParent="true"
+                android:layout_marginTop="215dp"
+                android:background="@drawable/circle_navy"
+                android:padding="@dimen/_9sdp"
+                android:src="@drawable/admin_icon" />
+
+            <RelativeLayout
+                android:id="@+id/container_text_uadmin"
+                android:layout_width="@dimen/_217sdp"
+                android:layout_height="@dimen/_108sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="275sp"
+                android:background="@drawable/btn_gray">
+
+                <!--Aquí va el contenido del contenedor de texto-->
+
+                <TextView
+                    android:id="@+id/QR_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/inter_black"
+                    android:text="Abril Admin"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/QR_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/QR_title"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="center"
+                    android:text="Good day"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+    </RelativeLayout>

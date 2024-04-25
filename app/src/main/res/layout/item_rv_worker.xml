@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="333dp"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true"
+
+    android:backgroundTint="#516178"
+
+    tools:ignore="NamespaceTypo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_naby_blue"
+        >
+
+
+        <TextView
+            android:id="@+id/NombreUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/inter_bold"
+            android:paddingStart="25dp"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="Pedro"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:fontFamily="@font/inter_bold"
+            android:paddingStart="25dp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="email"
+            android:textColor="@color/primaryfive"
+
+
+            android:textSize="@dimen/_9sdp"
+            card_view:layout_constraintTop_toBottomOf="@+id/NombreUsuario"
+
+            tools:ignore="MissingConstraints"
+
+            />
+
+
+        <TextView
+            android:id="@+id/Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/inter_bold"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="Registro"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+
+
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.559"
+            card_view:layout_constraintStart_toStartOf="@+id/NombreUsuario"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/create_white_icon"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.701"
+
+            card_view:layout_constraintStart_toStartOf="@+id/Username"
+            card_view:layout_constraintTop_toTopOf="@id/Username" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/user_icon"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@id/edit"
+            card_view:layout_constraintTop_toTopOf="@id/edit" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

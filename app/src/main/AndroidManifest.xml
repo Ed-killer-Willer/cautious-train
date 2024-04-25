@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme_SplashScreen"
+        tools:targetApi="31">
+
+
+<!--Zona de activitys-->
+
+        <!--Principal-->
+        <activity
+
+
+            android:name=".all.User_All"
+
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/SplashTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--user.Session_User-->
+        <activity
+            android:name=".user.Session_User"
+            android:exported="true"
+            android:launchMode="singleInstance">
+                                </activity>
+        <!--worker.Session_Worker-->
+        <activity
+            android:name=".worker.elements.Session_Worker"
+            android:exported="true"
+            android:launchMode="singleInstance">
+                                </activity>
+        <!--admin.Session_Admin-->
+        <activity
+            android:name=".admin.Session_Admin"
+            android:exported="true"
+            android:launchMode="singleInstance">
+                                </activity>
+        <!--User.Recovery_User-->
+        <activity
+            android:name=".user.Recovery_User"
+            android:exported="true"
+            android:launchMode="singleInstance">
+                                </activity>
+        <!--User.Recovery_User-->
+        <activity
+            android:name=".worker.elements.Recovery_Worker"
+            android:exported="true"
+            android:launchMode="singleInstance">
+        </activity>
+        <!--User.Recovery_User-->
+        <activity
+            android:name=".admin.Recovery_Admin"
+            android:exported="true"
+            android:launchMode="singleInstance">
+        </activity>
+        <!--user.Create_User-->
+        <activity
+            android:name=".user.Create_User"
+            android:exported="true"
+            android:launchMode="singleInstance">
+
+                    </activity>
+        <!--user.Profile_User-->
+        <activity
+            android:name=".user.Profile_User"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+        <!--user.Status_User-->
+        <activity
+            android:name=".user.Status_User"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+        <!--.worker.fragments_worker.Container_Fragments-->
+        <activity
+            android:name=".worker.fragments_worker.Container_Fragments"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+        <!--.worker.Scan-->
+        <activity
+            android:name=".worker.elements.Scan"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+        <!--.worker.Profile-->
+        <activity
+            android:name=".worker.elements.Profile"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+        <!--.admin.Main_Admin-->
+        <activity
+            android:name=".admin.Main_Admin"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+        <!--.admin.Main_Uadmin-->
+        <activity
+            android:name=".admin.Main_Uadmin"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+        <!--.admin.Create_Uadmin-->
+        <activity
+            android:name=".admin.Create_Uadmin"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+        <!--.admin.Rud_Uadmin-->
+        <activity
+            android:name=".admin.Rud_Uadmin"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+        <!--.admin.Update_Uadmin-->
+        <activity
+            android:name=".admin.Update_Uadmin"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+        <!--.admin.Read_Uadmin-->
+        <activity
+            android:name=".admin.Read_Uadmin"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+        <!--.admin.Main_Wadmin-->
+        <activity
+            android:name=".admin.Main_Wadmin"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+        <!--.admin.Create_Wadmin-->
+        <activity
+            android:name=".admin.Create_Wadmin"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+        <!--.admin.Rud_Wadmin-->
+        <activity
+            android:name=".admin.Rud_Wadmin"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+        <!--.admin.Update_Wadmin-->
+        <activity
+            android:name=".admin.Update_Wadmin"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+        <!--.admin.Read_Wadmin-->
+        <activity
+            android:name=".admin.Read_Wadmin"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+
+        <!--.test-->
+        <activity
+            android:name=".test.Pruebas_Image"
+            android:exported="true"
+            android:launchMode="singleInstance"> </activity>
+
+        <!--Fin de activitys-->
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+    </application>
+
+</manifest>

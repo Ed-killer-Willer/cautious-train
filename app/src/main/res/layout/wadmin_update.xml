@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".admin.Update_Wadmin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+
+        android:id="@+id/LayoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <!--Layout_Top -->
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+
+            android:background="@drawable/top_rectangule_blef"
+            tools:ignore="MissingConstraints"
+
+            />
+
+        <!--Layout_Bottom -->
+        <RelativeLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+
+
+
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_rectangule_tright"
+            tools:ignore="MissingConstraints"/>
+
+
+        <RelativeLayout
+            android:id="@+id/container_user_picture"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_below="@id/LayoutParent"
+            tools:ignore="MissingConstraints,NotSibling"
+            >
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_below="@id/checkBox"
+                android:onClick="back_to_wadmin_main"
+
+
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:background="@drawable/back_withe_icon"
+                android:textSize="@dimen/_9sdp" />
+
+            <GridLayout
+                android:id="@+id/grid_user_picture"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_below="@id/btn_back"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:useDefaultMargins="true">
+
+
+                <TextView
+                    android:id="@+id/txt_Name_user"
+                    android:layout_width="158dp"
+                    android:layout_height="75dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_51sdp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Editar
+                    Trabajador"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+
+                <ImageView
+                    android:id="@+id/iv_sex"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_35sdp"
+                    android:src="@drawable/log5"
+                    android:padding="@dimen/_15sdp"
+                    />
+
+            </GridLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <GridLayout
+            android:id="@+id/worker_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_153sdp"
+            android:layout_marginTop="@dimen/_120sdp"
+
+
+            android:columnCount="1"
+            tools:ignore="DuplicateIds,MissingConstraints">
+
+            <!-- Primera imagen y texto -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:id="@+id/grid_status1"
+                    style="@style/Widget.AppCompat.Button"
+
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/circle_navy"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/security_icon" />
+
+                <TextView
+                    android:id="@+id/txt_Name_user21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/inter_black"
+                    android:textAllCaps="false"
+                    android:text="Cargo"
+                    android:textColor="@color/black"
+                    android:textSize="28dp" />
+            </LinearLayout>
+        </GridLayout>
+
+        <!--Layout_Center -->
+        <LinearLayout
+
+            android:id="@+id/layout_center"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/worker_type"
+
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_gray"
+            android:orientation="vertical"
+            tools:ignore="NotSibling">
+
+
+            <EditText
+
+                android:id="@+id/txt_user"
+
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="@dimen/_230sdp"
+
+                android:layout_height="@dimen/_33sdp"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+
+                android:background="@drawable/btn_naby_blue"
+
+                android:textColor="@color/white"
+                android:textColorHint="#80FFFFFF"
+
+                android:drawableEnd="@drawable/worker_icon"
+                android:fontFamily="@font/inter"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_9sdp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/txt_name"
+
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="@dimen/_230sdp"
+
+                android:layout_height="@dimen/_33sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginStart="15dp"
+
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+
+
+                android:background="@drawable/btn_naby_blue"
+                android:drawableEnd="@drawable/worker_icon"
+                android:fontFamily="@font/inter"
+                android:paddingStart="@dimen/_20sdp"
+
+                android:paddingEnd="@dimen/_9sdp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+
+                android:textColor="@color/white"
+                android:textColorHint="#80FFFFFF"
+
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/txt_fisrt_name"
+
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="@dimen/_230sdp"
+
+                android:layout_height="@dimen/_33sdp"
+                android:layout_below="@+id/txt_name"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="@dimen/_9sdp"
+
+                android:background="@drawable/btn_naby_blue"
+
+                android:drawableEnd="@drawable/worker_icon"
+                android:fontFamily="@font/inter"
+                android:paddingStart="@dimen/_20sdp"
+
+                android:paddingEnd="@dimen/_9sdp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+
+                android:textColor="@color/white"
+                android:textColorHint="#80FFFFFF"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/cont_age_sex"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_below="@id/txt_fisrt_name"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/txt_age"
+                    style="@style/Widget.AppCompat.Button"
+
+
+                    android:layout_width="135dp"
+                    android:layout_height="40dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_naby_blue"
+                    android:drawableEnd="@drawable/worker_icon"
+
+                    android:fontFamily="@font/inter"
+                    android:paddingEnd="@dimen/_9sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#80FFFFFF"
+                    android:textSize="15sp"
+                    android:layout_marginStart="15dp"/>
+
+
+                <Spinner
+                    android:id="@+id/txt_sex"
+                    style="@style/Widget.AppCompat.Button"
+
+                    android:layout_width="135dp"
+                    android:layout_height="40dp"
+
+
+                    android:textColor="@color/white"
+                    android:textColorHint="#80FFFFFF"
+                    android:layout_gravity="center"
+
+                    android:layout_marginEnd="@dimen/_42sdp"
+                    android:layout_marginStart="@dimen/_22sdp"
+
+
+                    android:background="@drawable/style_spinner_drawable_sex"
+                    android:dropDownWidth="78dp"
+/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <CheckBox
+
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_center"
+
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_55sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+
+            android:background="@android:color/transparent"
+
+            android:button="@drawable/check_in_white"
+            android:fontFamily="@font/inter"
+            android:paddingStart="@dimen/_9sdp"
+            android:text="Acepto las politicas de la empresa"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9sdp" />
+        <Button
+            android:id="@+id/button"
+            android:onClick="update_changes"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/btn_white"
+            android:fontFamily="@font/inter_bold"
+            android:text="Guardar"
+            android:textSize="@dimen/_9sdp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/checkBox"
+            />
+        <Button
+            android:id="@+id/delete"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/btn_gray"
+            android:fontFamily="@font/inter_bold"
+            android:text="Eliminar usuario"
+            android:textSize="@dimen/_8sdp"
+            android:layout_centerInParent="true"
+
+            android:layout_below="@id/button"
+            />
+
+
+
+
+
+        <!--Lineas guía-->
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

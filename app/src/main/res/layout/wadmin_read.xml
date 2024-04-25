@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".admin.Read_Wadmin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/LayoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/btn_back_user_status"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/circle_navy"
+            android:onClick="back_worker_session"
+            android:src="@drawable/log_out_icon"
+            android:textSize="@dimen/_9sdp" />
+
+        <GridLayout
+            android:id="@+id/grid_user_picture"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_153sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+
+
+            android:columnCount="1"
+            tools:ignore="MissingConstraints">
+
+            <!-- Primera imagen y texto -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:id="@+id/grid_status1"
+                    style="@style/Widget.AppCompat.Button"
+
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/circle_navy"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/security_icon" />
+
+                <TextView
+                    android:id="@+id/txt_Name_user21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/inter_black"
+                    android:textAllCaps="false"
+                    android:text="Cargo"
+                    android:textColor="@color/black"
+                    android:textSize="28dp" />
+            </LinearLayout>
+        </GridLayout>
+
+        <!--Layout_Center -->
+        <LinearLayout
+
+            android:id="@+id/layout_center"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grid_user_picture"
+
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_gray"
+            android:orientation="vertical"
+            tools:ignore="NotSibling">
+
+
+            <TextView
+
+                android:id="@+id/txt_user"
+
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="@dimen/_230sdp"
+
+                android:layout_height="@dimen/_33sdp"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+
+                android:background="@drawable/btn_naby_blue"
+
+                android:drawableEnd="@drawable/worker_icon"
+                android:fontFamily="@font/inter"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_9sdp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_name"
+
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="@dimen/_230sdp"
+
+                android:layout_height="@dimen/_33sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginStart="15dp"
+
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+
+
+                android:background="@drawable/btn_naby_blue"
+                android:drawableEnd="@drawable/worker_icon"
+                android:fontFamily="@font/inter"
+                android:paddingStart="@dimen/_20sdp"
+
+                android:paddingEnd="@dimen/_9sdp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_fisrt_name"
+
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="@dimen/_230sdp"
+
+                android:layout_height="@dimen/_33sdp"
+                android:layout_below="@+id/txt_name"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="@dimen/_9sdp"
+
+                android:background="@drawable/btn_naby_blue"
+
+                android:drawableEnd="@drawable/worker_icon"
+                android:fontFamily="@font/inter"
+                android:paddingStart="@dimen/_20sdp"
+
+                android:paddingEnd="@dimen/_9sdp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <GridLayout
+                android:id="@+id/cont_age_sex"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_below="@id/txt_fisrt_name"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2">
+
+                <TextView
+                    android:id="@+id/txt_age"
+                    style="@style/Widget.AppCompat.Button"
+
+
+                    android:layout_width="128dp"
+                    android:layout_height="@dimen/_33sdp"
+
+                    android:layout_row="0"
+
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_naby_blue"
+                    android:drawableEnd="@drawable/worker_icon"
+
+                    android:fontFamily="@font/inter"
+                    android:paddingEnd="@dimen/_9sdp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_sex"
+                    style="@style/Widget.AppCompat.Button"
+
+                    android:layout_width="135dp"
+                    android:layout_height="40dp"
+
+                    android:layout_row="0"
+
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/btn_naby_blue"
+                    android:drawableEnd="@drawable/gender_icon"
+
+                    android:fontFamily="@font/inter"
+                    android:paddingEnd="@dimen/_9sdp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+
+
+                    android:textSize="15sp"
+
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </GridLayout>
+
+            <TextView
+
+                android:id="@+id/txt_email"
+
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="@dimen/_230sdp"
+
+                android:layout_height="@dimen/_33sdp"
+                android:layout_below="@id/cont_age_sex"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="@dimen/_15sdp"
+
+
+                android:background="@drawable/btn_naby_blue"
+
+
+                android:drawableEnd="@drawable/mail_icon"
+                android:fontFamily="@font/inter"
+                android:paddingStart="@dimen/_20sdp"
+
+                android:paddingEnd="@dimen/_9sdp"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+        <!--Lineas guía-->
+    </RelativeLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

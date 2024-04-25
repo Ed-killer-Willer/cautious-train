@@ -1,0 +1,21 @@
+<resources>
+    <string-array name="spinner_sex_values">
+        <item>Hombre</item>
+        <item>Mujer</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="spinner_package_values">
+        <item>Mano</item>
+        <item>Mediana</item>
+        <item>Grande</item>
+    </string-array>
+
+    <string-array name="type_worker">
+        <item>Registro</item>
+        <item>Transporte</item>
+        <item>Seguridad</item>
+        <item>Abordaje</item>
+        <item>Entrega</item>
+    </string-array>
+</resources>

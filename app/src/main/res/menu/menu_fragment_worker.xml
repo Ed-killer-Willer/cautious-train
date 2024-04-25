@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/info_icon"
+        android:title="Más"
+        />
+
+    <item
+        android:id="@+id/scan"
+        android:icon="@drawable/scan_white_icon"
+        android:title="Escaner"
+        />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/worker_icon"
+        android:title="Perfil"
+        />
+
+
+</menu>

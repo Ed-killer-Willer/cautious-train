@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".admin.Main_Wadmin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--Principal Container-->
+    <RelativeLayout
+        android:id="@+id/LayoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="409dp"
+            android:layout_height="387dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/layout_black_buttom_left"/>
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:onClick="back_user_main_admin"
+
+
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:background="@drawable/back_withe_icon"
+            android:textSize="@dimen/_9sdp" />
+
+        <RelativeLayout
+            android:layout_width="413dp"
+            android:layout_height="153dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/layout_black_top_left">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/black">
+
+        </RelativeLayout>
+
+        <!--Contenedor central de crear trabajadores-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="301dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="153dp"
+            android:background="@drawable/btn_white"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <!--Create Workers-->
+
+            <GridLayout
+                android:id="@+id/grid_create_workers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btn_go_to_urd_urd"
+                android:layout_centerInParent="true"
+                android:alignmentMode="alignMargins"
+                android:columnCount="5"
+                android:layout_marginBottom="@dimen/_18sdp">
+
+                <!-- Primera imagen y texto -->
+                <LinearLayout
+                    android:onClick="got_to_create_wadmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:onClick="got_to_create_wadmin"
+                        android:id="@+id/grid_status1"
+                        style="@style/Widget.AppCompat.Button"
+
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/circle_navy"
+                        android:padding="@dimen/_12sdp"
+                        android:src="@drawable/register4_icon" />
+
+                    <TextView
+                        android:onClick="got_to_create_wadmin"
+                        android:id="@+id/txt_Name_user21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/inter_semibold"
+
+                        android:text="Registro"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <!-- Segunda imagen y texto -->
+                <LinearLayout
+                    android:onClick="got_to_create_wadmin"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:onClick="got_to_create_wadmin"
+
+                        android:id="@+id/grid_status2"
+                        style="@style/Widget.AppCompat.Button"
+
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/circle_navy"
+                        android:padding="@dimen/_12sdp"
+                        android:src="@drawable/transport_icon"
+
+                        />
+
+                    <TextView
+                        android:onClick="got_to_create_wadmin"
+
+                        android:id="@+id/txt_Name_user22"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/inter_semibold"
+
+                        android:text="Transporte"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <!-- Tercer imagen y texto -->
+                <LinearLayout
+                    android:onClick="got_to_create_wadmin"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:onClick="got_to_create_wadmin"
+
+                        android:id="@+id/grid_status3"
+                        style="@style/Widget.AppCompat.Button"
+
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/circle_navy"
+                        android:padding="@dimen/_11sdp"
+                        android:src="@drawable/security_icon" />
+
+                    <TextView
+                        android:onClick="got_to_create_wadmin"
+
+                        android:id="@+id/txt_Name_user23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/inter_semibold"
+
+                        android:text="Seguridad"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <!-- cuarto imagen y texto -->
+                <LinearLayout
+                    android:onClick="got_to_create_wadmin"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="3"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:onClick="got_to_create_wadmin"
+
+                        android:id="@+id/grid_status4"
+                        style="@style/Widget.AppCompat.Button"
+
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/circle_navy"
+                        android:padding="@dimen/_11sdp"
+                        android:src="@drawable/flight_takeoff_icon" />
+
+                    <TextView
+                        android:onClick="got_to_create_wadmin"
+
+                        android:id="@+id/txt_Name_user24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/inter_semibold"
+
+                        android:text="Abordaje"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+                <!-- Quinto imagen y texto -->
+                <LinearLayout
+                    android:onClick="got_to_create_wadmin"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="4"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:onClick="got_to_create_wadmin"
+
+                        android:id="@+id/grid_status5"
+                        style="@style/Widget.AppCompat.Button"
+
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/circle_navy"
+                        android:padding="@dimen/_12sdp"
+                        android:src="@drawable/received_icon" />
+
+                    <TextView
+                        android:onClick="got_to_create_wadmin"
+
+                        android:id="@+id/txt_Name_user25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="Entrega"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </GridLayout>
+
+            <Button
+                android:onClick="go_to_rud_wadmin"
+                android:id="@+id/btn_go_to_urd_urd"
+                style="@style/Widget.AppCompat.Button"
+
+                android:layout_width="128dp"
+                android:layout_height="@dimen/_34sdp"
+
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="135dp"
+
+                android:layout_marginEnd="135dp"
+                android:layout_marginBottom="50dp"
+                android:autofillHints="numeric"
+                android:background="@drawable/btn_naby_blue"
+                android:drawableEnd="@drawable/tools_white_icon"
+
+                android:fontFamily="@font/inter"
+                android:paddingEnd="@dimen/_22sdp"
+                android:textColor="@color/white"
+                android:text="ABC"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <!--Segunda capapa (Imagen / Container text)-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+
+            android:id="@+id/image_admin_main_user"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_alignParentTop="true"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="215dp"
+            android:background="@drawable/circle_navy"
+            android:padding="@dimen/_9sdp"
+            android:src="@drawable/admin_icon" />
+
+        <RelativeLayout
+            android:id="@+id/container_text_uadmin"
+            android:layout_width="@dimen/_217sdp"
+            android:layout_height="@dimen/_108sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="275sp"
+            android:background="@drawable/btn_gray">
+
+            <!--Aquí va el contenido del contenedor de texto-->
+
+            <TextView
+                android:id="@+id/QR_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/inter_black"
+                android:text="Abril Admin"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/QR_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/QR_title"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center"
+                android:text="Good day"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+</RelativeLayout>
